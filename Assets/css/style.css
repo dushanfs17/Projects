@@ -1,0 +1,87 @@
+/* Imported Font from Google Fonts - Inter Tight */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  list-style: none;
+}
+
+.card-section {
+  background-color: #a29999;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ccc;
+  border-radius: 12px;
+}
+
+.background-main {
+  background-color: #ccc;
+}
+
+.opacity-container {
+  background-color: #d9d9d9;
+  border-radius: 14px;
+  margin-top: 30px;
+  padding: 40px 20px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.btn-primary,
+.btn-warning {
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: red !important;
+  margin-top: 5px !important;
+}
+
+.error-border {
+  border: 2px solid red !important;
+}
+
+.valid-border {
+  border: 3px solid green !important;
+}
+
+.adminCard {
+  background-color: #c7c7c7;
+}
+
+.hero-banner {
+  height: calc(85vh - 121px);
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(16, 16, 16, 0.463),
+      rgba(18, 1, 18, 0.759)
+    ),
+    url("https://cdn.stocksnap.io/img-thumbs/960w/library-books_4TDHSPIMJ6.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote p {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}

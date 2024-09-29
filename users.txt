@@ -1,0 +1,9 @@
+To log in as administrator:
+username: admin 
+password: Admin123$
+
+To log in as test user:
+username: dusanhv
+password: Dusan123$
+
+Or feel free to create a user for yourself and test the Register Logic :)
