@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+// Footer SCSS File
+footer {
+  background-color: var.$background-color-tertiary;
+  padding: var.$gutter-base;
+  font-size: var.$font-size-medium * 1.2;
+  margin-top: var.$gutter-base * 2.5;
+
+  @include mix.tablet-styles {
+    font-size: var.$font-size-small;
+  }
+}

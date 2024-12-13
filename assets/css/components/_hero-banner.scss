@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+// Hero-Banner SCSS
+
+.hero-banner {
+  height: calc(85vh - 131.64px);
+
+  @include mix.mobile-l-styles {
+    height: calc(60vh - 101.64px);
+  }
+  background-image: linear-gradient(
+      to bottom,
+      rgba(16, 16, 16, 0.547),
+      rgba(18, 1, 18, 0.842)
+    ),
+    url("https://cdn.stocksnap.io/img-thumbs/960w/computer-keyboard_A28WZDTYEY.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .auto-typed {
+    color: var.$text-color-tertiary;
+    max-width: 1000px;
+    text-shadow: 5px 2px #8a8601, 2px 4px #8a8601, 3px 5px #8a8601;
+
+    @include mix.mobile-l-styles {
+      max-width: 265px;
+      font-size: var.$heading-size-tiny;
+    }
+  }
+}

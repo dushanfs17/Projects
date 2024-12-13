@@ -1,0 +1,84 @@
+@use "./variables" as var;
+@use "sass:math";
+
+// Mixins
+// Tablet-Styles
+@mixin tablet-styles {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+// Mobile-L-Styles
+@mixin mobile-l-styles {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+// Extends
+%section {
+  padding-top: (var.$gutter-base * 2);
+  padding-bottom: (var.$gutter-base * 2);
+
+  @include tablet-styles {
+    padding-top: (var.$gutter-base);
+    padding-bottom: (var.$gutter-base);
+  }
+}
+
+%wrap {
+  width: 80%;
+  margin-right: 0;
+  margin-left: 0;
+
+  @include tablet-styles {
+    width: 90%;
+  }
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-wrap-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+%form-input-setup {
+  border: 1px solid #f0f0f0;
+  border-radius: var.$gutter-base * 0.2;
+  display: block;
+  height: var.$gutter-base * 2;
+  width: 100%;
+  padding-left: var.$gutter-base * 1;
+  font-size: var.$font-size-medium;
+  // font-style: italic;
+
+  @include tablet-styles {
+    height: var.$gutter-base * 1.5;
+    padding-left: var.$gutter-base * 0.5;
+  }
+}

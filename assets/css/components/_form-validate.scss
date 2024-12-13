@@ -1,0 +1,136 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.form-wrapper {
+  @extend %flex-center;
+  height: calc(100vh - 131.64px);
+  flex-direction: column;
+
+  .heading-card-section {
+    @extend %flex-center;
+    @extend %section;
+    max-width: 100%;
+    h2 {
+      font-size: 5rem;
+      color: var.$text-color-base;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 0;
+
+      @include mix.tablet-styles {
+        font-size: var.$gutter-base * 1.5;
+      }
+    }
+  }
+  .wrapper {
+    @extend %wrap;
+    max-width: 100%;
+    border-radius: 5px;
+
+    @include mix.tablet-styles {
+      max-width: 90%;
+    }
+    @include mix.mobile-l-styles {
+      max-width: 100%;
+    }
+    form {
+      padding-bottom: 60px;
+      @include mix.tablet-styles {
+        padding-bottom: 30px;
+      }
+      .user-details {
+        @extend %flex-wrap-between;
+        @include mix.tablet-styles {
+          margin-bottom: 10px;
+        }
+        .input-control {
+          @extend %flex-column;
+          width: calc(100% / 2 - 20px);
+          @include mix.tablet-styles {
+            width: 100%;
+          }
+          .details {
+            display: flex;
+            margin-bottom: 5px;
+          }
+          label {
+            font-weight: var.$font-weight-bold;
+            font-size: var.$font-size-small;
+
+            @include mix.tablet-styles {
+              font-size: var.$font-size-medium;
+            }
+          }
+          input {
+            @extend %form-input-setup;
+            transition: all 0.2s ease-in-out;
+            &:focus {
+              outline: 0;
+            }
+            &::placeholder {
+              font-style: italic;
+            }
+            &:hover {
+              box-shadow: 5px 5px 3px 0px #4a4444bf;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+          select {
+            @extend %form-input-setup;
+
+            &:focus {
+              outline: 0;
+            }
+
+            &::placeholder {
+              font-style: italic;
+            }
+
+            &:hover {
+              box-shadow: 5px 5px 3px 0px #4a4444bf;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+
+          .btn-custom {
+            @include mix.tablet-styles {
+              margin-bottom: 0;
+            }
+          }
+          .error {
+            color: #ff3860;
+            font-size: 14px;
+            height: 2px;
+            margin-bottom: var.$gutter-base;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    #success-message {
+      text-align: center;
+
+      display: none;
+      p {
+        padding-bottom: var.$gutter-base * 0.3;
+        font-size: var.$font-size-medium;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.input-control.success input {
+  border-color: var.$border-color-success !important;
+}
+.input-control.error input {
+  border-color: var.$border-color-error !important;
+}
+.input-control.sucess select {
+  border-color: var.$border-color-success !important;
+}
+.input-control.error select {
+  border-color: var.$border-color-error !important;
+}

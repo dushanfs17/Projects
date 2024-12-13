@@ -1,0 +1,184 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+// Cards-Filter SCSS file
+
+// Cards Style
+.row {
+  @include mix.tablet-styles {
+    justify-content: center;
+  }
+}
+
+.card {
+  flex-basis: 31%;
+  transition: 0.4s ease-in-out;
+  box-shadow: 11px 14px 13px -4px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 11px 14px 13px -4px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 11px 14px 13px -4px rgba(0, 0, 0, 0.54);
+
+  @include mix.tablet-styles {
+    ul.list-group {
+      li.list-group-item {
+        font-size: var.$font-size-big;
+        line-height: var.$line-height-small;
+      }
+    }
+  }
+
+  @include mix.mobile-l-styles {
+    ul.list-group {
+      li.list-group-item {
+        font-size: var.$font-size-medium;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @include mix.tablet-styles {
+    flex-basis: 90%;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+
+  &:hover {
+    transform-style: flat;
+    transform-origin: center;
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+  }
+
+  .card-body {
+    .card-title {
+      width: fit-content;
+      background-color: var.$background-color-base;
+
+      @include mix.tablet-styles {
+        font-size: var.$heading-size-tiny;
+      }
+
+      @include mix.mobile-l-styles {
+        font-size: var.$font-size-tiny;
+      }
+    }
+  }
+
+  @include mix.tablet-styles {
+    .card-text {
+      font-size: var.$heading-size-big;
+    }
+  }
+
+  @include mix.mobile-l-styles {
+    .card-text {
+      font-size: var.$heading-size-micro;
+    }
+  }
+
+  .btn {
+    background-color: var.$background-color-btn;
+    transition: 0.4s ease-in-out;
+    padding: 10px 35px;
+
+    @include mix.tablet-styles {
+      padding: 15px 70px;
+    }
+
+    @include mix.mobile-l-styles {
+      padding: 10px 30px;
+      font-size: var.$font-size-small !important;
+    }
+
+    &:hover {
+      background-color: rgb(161, 1, 1);
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+  .list-group {
+    .list-group-item {
+      line-height: 25px;
+      font-size: 1.2rem;
+    }
+  }
+}
+// Cards Style END
+
+// Filters
+label {
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.check {
+  visibility: hidden;
+}
+
+input:checked + label .check {
+  visibility: visible;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .fa-circle-check {
+    font-size: var.$font-size-big;
+  }
+}
+
+.filters {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.checkbox {
+  font-size: var.$heading-size-tiny;
+  border-right: 1px solid var.$background-color-tertiary;
+  margin: 0;
+  padding: 0;
+
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  .filters {
+    .row {
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: var.$background-color-onclick;
+      color: var.$text-color-base;
+    }
+  }
+
+  @include mix.tablet-styles {
+    border-right: none;
+  }
+
+  @include mix.mobile-l-styles {
+    font-size: var.$font-size-small;
+    font-weight: var.$font-weight-bold;
+  }
+
+  input[type="checkbox"] {
+    &:checked + .filters {
+      background-color: var.$background-color-onclick;
+      color: var.$text-color-base;
+    }
+  }
+}
+// Filters END

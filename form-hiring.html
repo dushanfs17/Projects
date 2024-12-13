@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Проекти изработени од студентите на Бреинстер запишани на Бреинстер академиите"
+    />
+    <meta
+      name="keywords"
+      content="Brainster, Labs, BrainsterLabs, Projects, BrainsterAcademies, BrainsterAcademy, Academy, Academies"
+    />
+    <meta name="author" content="Dushan Hadji-Vasilev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Font-Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/dbcb194128.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Home - BrainsterLabs</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+        <a
+          class="navbar-brand p-0 m-0 d-flex flex-column align-items-center"
+          href="./index.html"
+        >
+          <img src="./assets/images/Logo.png" alt="Brainster Brand Logo" />
+          <span class="fw-bold text-uppercase">Brainster</span>
+        </a>
+        <button
+          class="navbar-toggler text-end p-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <path
+              d="M22 30V27.5H35V30H22ZM11.25 21.25V18.75H35V21.25H11.25ZM5 12.5V10H35V12.5H5Z"
+              fill="black"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="offcanvas offcanvas-end bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header justify-content-end">
+            <button
+              type="button"
+              class="btn-close btn-close-white fs-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item marketing">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/marketing/"
+                  target="_blank"
+                  >Академија за маркетинг</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/full-stack/"
+                  target="_blank"
+                  >Академија за програмирање</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/data-science/"
+                  target="_blank"
+                  >Академија за Data Science</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://brainster.co/graphic-design/"
+                  target="_blank"
+                  >Академија за дизајн</a
+                >
+              </li>
+            </ul>
+
+            <a href="#" class="btn fw-bold">Вработи наш студент</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Hiring-Form Section -->
+    <div class="form-wrapper">
+      <div class="heading-card-section">
+        <h2>Вработи студенти</h2>
+      </div>
+      <!-- form -->
+      <div class="wrapper">
+        <form action="#" id="form" method="POST">
+          <div class="user-details">
+            <div class="input-control">
+              <label for="username" class="details">Име и презиме</label>
+              <input
+                type="text"
+                placeholder="Вашето име и презиме"
+                id="username"
+                name="username"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label class="details">Име на компанија</label>
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Име на вашата компанија"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label class="details">Контакт е-емаил</label>
+              <input
+                type="text"
+                id="email"
+                name="e-mail"
+                placeholder="Контакт е-маил на вашата компанија"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label class="details">Контакт телефон</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Контакт телефон на вашата компанија"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label class="details">Тип на студенти</label>
+              <select name="students" id="students">
+                <option value="" class="info-option" disabled selected>
+                  Изберете тип на студент
+                </option>
+                <option value="studentsmarketing">Студент од маркетинг</option>
+                <option value="studentsprogramming">
+                  Студент од програмирање
+                </option>
+                <option value="studentsdatascience">
+                  Студент од Data Science
+                </option>
+                <option value="studentsdesign">Студент од дизајн</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label class="details">Испрати ја формата</label>
+              <input
+                type="submit"
+                value="Испрати"
+                class="btn-custom"
+                style="border: none"
+                onclick="validateInputs()"
+              />
+            </div>
+          </div>
+        </form>
+        <div id="success-message">
+          <p>Успешно пополнета апликација!</p>
+          <p>Ви благодариме на довербата!</p>
+          <p>
+            <button class="btn" onclick="hideSuccessMessage()">
+              Назад кон формата
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Hiring-Form Section END -->
+
+    <!-- Footer -->
+    <footer class="hire">
+      <p class="m-0 text-center text-white fw-bold">
+        Изработено со &#10084;&#65039; од студентите на Brainster
+      </p>
+    </footer>
+    <!-- Footer END-->
+
+    <!-- SCRIPTS -->
+    <!-- Scripts from Internal JS file -->
+    <script src="./assets/JS/form-validation.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Scripts END -->
+    <!-- SCRIPTS END -->
+  </body>
+</html>
