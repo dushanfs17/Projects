@@ -1,1 +1,1 @@
-# AcademyProjects
+# Projects
