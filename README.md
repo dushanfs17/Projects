@@ -1,4 +1,4 @@
-# Brainster Library | Full Stack Academy Project
+# Brainster Library | Full-Stack Academy Project
 
 ![Brainster Library Logo](https://i.postimg.cc/zyG6QcWF/Brainster-co.png)
 

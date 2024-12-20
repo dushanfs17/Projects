@@ -46,7 +46,7 @@ $counter = 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Brainster Library is an online platform designed to let users share their thoughts on the books they are reading by leaving private or public comments. The platform allows users to revisit their notes anytime, offering a personalized space for reflection and discussion." />
     <meta name="author" content="Dushan Hadji-Vasilev" />
-    <title>LibraryTok : Comments </title>
+    <title>Comments - Brainster Library</title>
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="../../Assets/css/style.css">
@@ -66,7 +66,7 @@ $counter = 1;
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand text-secondary" href="../../index.php">
-                <img src='https://i.postimg.cc/zyG6QcWF/Brainster-co.png' border='0' width="90" alt='Brainster-co' />
+                <img src='https://i.postimg.cc/QMwtf1vQ/Designer-2.png' border='0' width="90" alt='Brainster-co' />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

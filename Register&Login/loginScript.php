@@ -14,8 +14,6 @@ $connection = $connectionObj->getConnection();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// var_dump($password);
-
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     return header('Location: ./login-user.php');
 } elseif ($username === '' or $password = '') {

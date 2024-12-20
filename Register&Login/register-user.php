@@ -26,7 +26,7 @@
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand text-secondary" href="../index.php">
-                <img src='https://i.postimg.cc/zyG6QcWF/Brainster-co.png' border='0' width="90" alt='Brainster-co' />
+                <img src='https://i.postimg.cc/QMwtf1vQ/Designer-2.png' border='0' width="90" alt='Brainster-co' />
             </a>
             <button class="navbar-toggler bg-secondary
             " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,14 +69,14 @@
                     </div>
 
                     <div class="formGroup">
-                        <label for="email">Your Email</label>
+                        <label for="email">Email</label>
                         <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
                         <div class="error-message" id="email-error"></div>
 
                     </div>
 
                     <div class="formGroup">
-                        <label for="password">Your password</label>
+                        <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                         <div class="error-message" id="password-error"></div>
                     </div>

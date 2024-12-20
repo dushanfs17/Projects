@@ -15,7 +15,6 @@ $connectionObj = new Connection();
 $connection = $connectionObj->getConnection();
 
 $adminUsername = $_SESSION['username'];
-//
 
 $author_first_name = $_POST['author_first_name'];
 $author_last_name = $_POST['author_last_name'];
