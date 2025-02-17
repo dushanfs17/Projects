@@ -18,8 +18,9 @@ class ProjectResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'description' => $this->description,
-            'due_date' => $this->due_date->format('Y-m-d'),
-            'created_at' => $this->created_at,
+            'due_date' => $this->due_date ? $this->due_date->format('Y-m-d') : null,
+            'created_at' => $this->created_at ? $this->created_at->toDateTimeString() : null,
+            'updated_at' => $this->updated_at ? $this->updated_at->toDateTimeString() : null,
         ];
     }
 }

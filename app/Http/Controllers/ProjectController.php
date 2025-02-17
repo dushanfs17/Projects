@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use Illuminate\Http\Request;
-use App\Http\Resources\ProjectResource;
 
 class ProjectController extends Controller
 {
     public function index(Request $request)
     {
-        $projects = Project::when($request->due_date, fn($q) => $q->whereDate('due_date', $request->due_date))
+        // Apply filtering if the 'due_date' query parameter is present
+        $projects = Project::when($request->due_date, function ($query) use ($request) {
+            return $query->whereDate('due_date', $request->due_date);
+        })
             ->get();
 
         return view('projects.index', compact('projects'));
@@ -19,7 +21,10 @@ class ProjectController extends Controller
 
     public function store(StoreProjectRequest $request)
     {
-        $project = Project::create($request->validated());
-        return new ProjectResource($project);
+        // Store the new project in the database
+        Project::create($request->validated());
+
+        // Redirect back to the projects index page after project creation
+        return redirect()->route('projects.index')->with('success', 'Project created successfully!');
     }
 }
