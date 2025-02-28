@@ -20,6 +20,22 @@
         <div class="mb-4 p-4 bg-red-100 text-red-700 rounded">{{ session('error') }}</div>
         @endif
 
+        <!-- Filter Form -->
+        <form method="GET" action="{{ route('projects.index') }}" class="mb-8 bg-white p-6 rounded-lg shadow-md">
+            <div class="flex space-x-4">
+                <div class="flex-1">
+                    <label for="due_date" class="block text-sm font-medium text-gray-700">Filter by Due Date</label>
+                    <input type="date" name="due_date" id="due_date" value="{{ request('due_date') }}"
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                </div>
+                <div class="flex items-end">
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                        Filter
+                    </button>
+                </div>
+            </div>
+        </form>
+
         <!-- Create Project Form -->
         <form action="{{ route('projects.store') }}" method="POST" class="mb-8 bg-white p-6 rounded-lg shadow-md">
             @csrf

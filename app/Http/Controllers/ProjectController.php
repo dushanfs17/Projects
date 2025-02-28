@@ -14,7 +14,14 @@ class ProjectController extends Controller
      */
     public function index(Request $request)
     {
-        $projects = Project::all();
+        $query = Project::query();
+
+        // Filter by due_date if provided
+        if ($request->filled('due_date')) {
+            $query->where('due_date', $request->input('due_date'));
+        }
+
+        $projects = $query->get();
 
         // Check if the request expects JSON response
         if ($request->expectsJson()) {
