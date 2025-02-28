@@ -2,29 +2,40 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
+use App\Http\Resources\ProjectResource;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
+    /**
+     * Display a listing of the projects.
+     */
     public function index(Request $request)
     {
-        // Apply filtering if the 'due_date' query parameter is present
-        $projects = Project::when($request->due_date, function ($query) use ($request) {
-            return $query->whereDate('due_date', $request->due_date);
-        })
-            ->get();
+        $projects = Project::all();
+
+        // Check if the request expects JSON response
+        if ($request->expectsJson()) {
+            return ProjectResource::collection($projects);
+        }
 
         return view('projects.index', compact('projects'));
     }
 
+    /**
+     * Store a newly created project in storage.
+     */
     public function store(StoreProjectRequest $request)
     {
-        // Store the new project in the database
-        Project::create($request->validated());
+        $project = Project::create($request->validated());
 
-        // Redirect back to the projects index page after project creation
-        return redirect()->route('projects.index')->with('success', 'Project created successfully!');
+        // Check if the request expects JSON response
+        if ($request->expectsJson()) {
+            return new ProjectResource($project);
+        }
+
+        return redirect()->route('projects.index')->with('success', 'Project created successfully.');
     }
 }

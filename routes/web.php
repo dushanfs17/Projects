@@ -10,6 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Web Routes
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
 Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
 
@@ -19,3 +20,4 @@ Route::post('/categories', [CategoryController::class, 'store'])->name('categori
 
 Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');
 Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
+Route::patch('/tasks({task}', [TaskController::class, 'update'])->name('tasks.update');

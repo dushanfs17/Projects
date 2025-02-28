@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 
-<body>
-    <div class="container">
+<body class="bg-gray-100 p-6">
+    <div class="container mx-auto">
         <h1 class="text-3xl font-bold mb-6">Categories</h1>
+
+        @if (session('success'))
+        <div class="mb-4 p-4 bg-green-100 text-green-700 rounded">{{ session('success') }}</div>
+        @endif
+        @if (session('error'))
+        <div class="mb-4 p-4 bg-red-100 text-red-700 rounded">{{ session('error') }}</div>
+        @endif
 
         <!-- Add Category Form -->
         <form action="{{ route('categories.store') }}" method="POST" class="mb-8 bg-white p-6 rounded-lg shadow-md">
@@ -31,8 +38,10 @@
             <p>No categories found.</p>
             @else
             <ul>
-                @foreach ($categories as $category)
-                <li>{{ $category->name }}</li>
+                @foreach ($categories->sortByDesc('created_at') as $category)
+                <li class="mb-2 p-2 border-b border-gray-300">
+                    <strong>{{ $category->name }}</strong>
+                </li>
                 @endforeach
             </ul>
             @endif

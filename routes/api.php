@@ -21,4 +21,5 @@ Route::prefix('v1')->group(function () {
     // Tasks
     Route::apiResource('tasks', TaskController::class)->only(['index', 'store']);
     Route::patch('tasks/{task}/complete', [TaskController::class, 'complete']);
+    Route::patch('tasks/{task}/progress', [TaskController::class, 'progress']);
 });

@@ -10,7 +10,6 @@ class Task extends Model
 {
     use HasFactory;
 
-    // Fields that can be mass-assigned
     protected $fillable = [
         'project_id',
         'category_id',
@@ -18,21 +17,17 @@ class Task extends Model
         'description',
         'status',
         'due_date',
-        'timestamp'
     ];
 
-    // Cast due_date to a Carbon instance
     protected $casts = [
         'due_date' => 'date',
     ];
 
-    // Relationship: A task belongs to a project
     public function project(): BelongsTo
     {
         return $this->belongsTo(Project::class);
     }
 
-    // Relationship: A task belongs to a category
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
