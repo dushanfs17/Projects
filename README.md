@@ -1,6 +1,6 @@
-# Mini-Project 05 - JS - Trivia Quiz
+# Project 05 - JS - Brainster Quiz App
 
-This challenge for a Trivia Quiz manages a series of trivia questions, allowing users to start a quiz, answer questions, track their progress, and see their final score.
+This Project for a Brainster Quiz App manages a series of trivia questions, allowing users to start a quiz, answer questions, track their progress, and see their final score.
 
 ## Features
 
@@ -46,13 +46,12 @@ In addition to this self-initiated feature, the basic requirement that if the us
 
 ## Reflection
 
-This challenge demonstrates proficiency in creating reusable and maintainable JavaScript code using different types of functions and techniques. Through completing this challenge, I've deepened my understanding of JavaScript's role in creating dynamic and interactive web applications. Handling API calls to fetch questions, implementing robust session management to ensure the quiz state is preserved on page reload, and managing data structures like arrays of objects have been key learning points. Exploring ES6+ features such as classes and modules has allowed me to write cleaner and more organized code, promoting better maintainability and scalability of the application.
+This project demonstrates proficiency in creating reusable and maintainable JavaScript code using different types of functions and techniques. Through completing this challenge, I've deepened my understanding of JavaScript's role in creating dynamic and interactive web applications. Handling API calls to fetch questions, implementing robust session management to ensure the quiz state is preserved on page reload, and managing data structures like arrays of objects have been key learning points. Exploring ES6+ features such as classes and modules has allowed me to write cleaner and more organized code, promoting better maintainability and scalability of the application.
 
 ## Conclusion
 
-This challenge has been a significant milestone in my journey as a developer, reinforcing fundamental programming principles and expanding my toolkit in JavaScript development. By building a functional trivia quiz app, I've gained practical experience in frontend scripting, UI/UX design considerations, and integrating external libraries like Bootstrap for enhanced styling and responsiveness. Moving forward, I look forward to applying these skills in more complex projects and contributing meaningfully to the field of web development.
+This project has been a significant milestone in my journey as a developer, reinforcing fundamental programming principles and expanding my toolkit in JavaScript development. By building a functional trivia quiz app, I've gained practical experience in frontend scripting, UI/UX design considerations, and integrating external libraries like Bootstrap for enhanced styling and responsiveness. Moving forward, I look forward to applying these skills in more complex projects and contributing meaningfully to the field of web development.
 
 Sincerely,
 
-Dushan Hadji-Vasilev  
-Full-Stack Academy - Group No. 17
+Dushan Hadji-Vasilev
