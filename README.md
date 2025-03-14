@@ -1,66 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Mini-Project 05 - JS - Trivia Quiz
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This challenge for a Trivia Quiz manages a series of trivia questions, allowing users to start a quiz, answer questions, track their progress, and see their final score.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Start Quiz**: Users can start the quiz and be presented with a series of trivia questions.
+- **Answer Questions**: Users can answer multiple-choice questions.
+- **Progress Tracking**: Progress is displayed, and users can continue from where they left off even after refreshing the page.
+- **Display Results**: Users are shown their total correct answers at the end of the quiz.
+- **Validation**: Ensures that questions are properly loaded and displayed.
+- **Alerts**: Error messages are displayed if there is an issue loading questions.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technologies Used
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **JavaScript**: ES6+ for functionality and interactivity.
+- **Bootstrap**: Styling components for a responsive and modern UI.
+- **CSS**: Custom styling for layout and design.
+- **HTML**: Structure and DOM manipulation.
+- **Animate CSS Library**: A library of ready-to-use, cross-browser animations for use in web projects. Great for adding attention-grabbing visual effects to your application.
 
-## Learning Laravel
+## File Structure
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **index.html**: Main HTML file containing the quiz interface.
+- **assets/js/**:
+  - **main.js**: Initializes the application, fetches questions, handles quiz logic, and manages state.
+- **assets/style/style.css**: Contains custom styling for the application layout and components.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Explanation of Code
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The `index.html` file contains the structure of the quiz application, including sections for the loading screen, start screen, quiz screen, and result screen. Bootstrap and custom CSS are used for styling.
 
-## Laravel Sponsors
+### main.js
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. **Event Listeners**: Sets up event listeners for the start button, start over button, and try again button.
+2. **Fetching Questions**: Fetches trivia questions from an external API.
+3. **Quiz Logic**: Manages the quiz state, including the current question index and correct answers. It shows the current question and checks the user's answer.
+4. **Saving State**: Saves the current quiz state to `localStorage` to persist data across page reloads.
+5. **Hash Routing**: Uses hash routing to display the current question based on the URL hash.
 
-### Premium Partners
+### Session Management
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+In both solutions, the quiz state (current question index and correct answers) is saved to `localStorage`, ensuring that refreshing the page does not reset the quiz. This feature prevents the user from losing progress if they accidentally refresh the page.
 
-## Contributing
+In addition to this self-initiated feature, the basic requirement that if the user clicks on Start Over or Try Again, reload the page and clear the local storage has been implemented.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Reflection
 
-## Code of Conduct
+This challenge demonstrates proficiency in creating reusable and maintainable JavaScript code using different types of functions and techniques. Through completing this challenge, I've deepened my understanding of JavaScript's role in creating dynamic and interactive web applications. Handling API calls to fetch questions, implementing robust session management to ensure the quiz state is preserved on page reload, and managing data structures like arrays of objects have been key learning points. Exploring ES6+ features such as classes and modules has allowed me to write cleaner and more organized code, promoting better maintainability and scalability of the application.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Conclusion
 
-## Security Vulnerabilities
+This challenge has been a significant milestone in my journey as a developer, reinforcing fundamental programming principles and expanding my toolkit in JavaScript development. By building a functional trivia quiz app, I've gained practical experience in frontend scripting, UI/UX design considerations, and integrating external libraries like Bootstrap for enhanced styling and responsiveness. Moving forward, I look forward to applying these skills in more complex projects and contributing meaningfully to the field of web development.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Sincerely,
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Dushan Hadji-Vasilev  
+Full-Stack Academy - Group No. 17
