@@ -52,6 +52,6 @@ This project demonstrates proficiency in creating reusable and maintainable Java
 
 This project has been a significant milestone in my journey as a developer, reinforcing fundamental programming principles and expanding my toolkit in JavaScript development. By building a functional trivia quiz app, I've gained practical experience in frontend scripting, UI/UX design considerations, and integrating external libraries like Bootstrap for enhanced styling and responsiveness. Moving forward, I look forward to applying these skills in more complex projects and contributing meaningfully to the field of web development.
 
-Sincerely,
+#### Sincerely,
 
-Dushan Hadji-Vasilev
+#### Dushan Hadji-Vasilev
