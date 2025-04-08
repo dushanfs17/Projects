@@ -1,5 +1,7 @@
 # Project 05 - JS - Brainster Quiz App
 
+## Project Overview
+
 This Project for a Brainster Quiz App manages a series of trivia questions, allowing users to start a quiz, answer questions, track their progress, and see their final score.
 
 ## Features
