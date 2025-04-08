@@ -12,5 +12,6 @@ In this GitHub branch is attached the First Project of Brainster's Full-Stack Ac
 
 ## I hope you will like it.
 
-With respect,
-Dusan Hadji-Vasilev
+#### Sincerely,
+
+#### Dushan Hadji-Vasilev FS17
