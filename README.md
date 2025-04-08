@@ -1,4 +1,4 @@
-# Brainster Library | Full-Stack Academy Project
+# Project 02 - Brainster Library
 
 ![Brainster Library Logo](https://i.postimg.cc/zyG6QcWF/Brainster-co.png)
 
@@ -175,4 +175,4 @@ brainster_library/
 
 #### Sincerely,
 
-#### Dushan Hadji-Vasilev FS17
+#### Dushan Hadji-Vasilev
