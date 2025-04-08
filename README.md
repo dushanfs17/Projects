@@ -116,3 +116,7 @@ Task Manager is a Laravel application for managing tasks, projects, and categori
 -   **Resources**: API responses are formatted using Laravel Resources for consistency and nested data handling.
 -   **Validation**: Form Requests ensure data integrity.
 -   **Optimization**: Task status updates share a helper method in `TaskController`.
+
+#### Sincerely,
+
+#### Dushan Hadji-Vasilev
