@@ -1,66 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Project Portfolio
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Overview
 
-## About Laravel
+This repository showcases six diverse projects, each highlighting proficiency in various technologies and frameworks, reflecting creativity, technical expertise, and problem-solving skills.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Project 01: Brainster Labs
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+An interactive and responsive web application designed to demonstrate skills in:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **HTML**, **CSS**, **SCSS** for structure and styling.
+- **Bootstrap** for creating modern and responsive user interfaces.
+- **JavaScript** for enhancing interactivity and functionality.
 
-## Learning Laravel
+### Project 02: Brainster Library
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+A custom library management application developed with:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **PHP** for server-side logic and functionality.
+- **Bootstrap** for creating modern and responsive user interfaces.
+- **JavaScript** for dynamic user experiences and interactivity.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Project 03: Cyberware Global Defence
 
-## Laravel Sponsors
+A comprehensive web application built with the **Laravel framework**, focusing on:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Scalable and secure back-end architecture for efficient data handling.
+- Robust data management and user authentication.
+- Styled with **Tailwind CSS** for a modern and responsive design.
+- **Chart.js** integration for visually representing published jobs and other data.
+- Email functionality integrated with **Mailtrap** for testing and managing email communications.
 
-### Premium Partners
+This project combines functional and aesthetic elements to deliver a polished, user-friendly application.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Project 04: Hackathon Winning Solution for The Founder Games
 
-## Contributing
+An innovative project leveraging AI and APIs to enhance video content management and searchability, featuring:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Python** for backend scripting and integration.
+- **YouTube API** to fetch and manage video content.
+- **OpenAI API** for summarizing videos and generating keywords for optimized searching and indexing.
 
-## Code of Conduct
+### Project 05: Brainster Quiz App (JavaScript)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+A dynamic trivia quiz application that allows users to start a quiz, answer multiple-choice questions, track progress, and view their final score. It features session management with localStorage to preserve quiz state across page reloads.
 
-## Security Vulnerabilities
+#### Features
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Start quiz, answer questions, track progress, and display results.
+- Error alerts and validation for question loading.
+- Persistent state using localStorage.
 
-## License
+#### Technologies
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **JavaScript**: ES6+ for interactivity and logic.
+- **Bootstrap** and **CSS**: Responsive styling.
+- **HTML**: Structure and DOM manipulation.
+- **Animate CSS Library**: Visual effects.
+
+### Project 06: Task Management System (Laravel)
+
+A Laravel-based application for managing tasks, projects, and categories via a web interface and RESTful API, with a focus on efficient database management and responsive design.
+
+#### Features
+
+- Web interface and API for task, project, and category management.
+- MySQL database with Eloquent ORM for relationships.
+
+#### Technologies
+
+- **Backend**: Laravel
+- **Database**: MySQL
+- **API**: Laravel Resources
+- **Frontend**: Blade, Tailwind CSS
+
+Each project reflects a commitment to clean code practices, responsive design, and cutting-edge technology integration.
