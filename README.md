@@ -173,6 +173,6 @@ brainster_library/
 └── users.txt
 ```
 
-## Sincerely,
+#### Sincerely,
 
-## Dushan Hadji-Vasilev FS17
+#### Dushan Hadji-Vasilev FS17
