@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Task Manager is a Laravel application for managing tasks, projects, and categories through a web interface and RESTful API. It leverages Eloquent ORM for database management, Laravel Resource classes for API responses, and Blade with Tailwind CSS for the frontend. Users can create, filter, and update tasks, projects, and categories seamlessly across web and API.
+**Task Manager** is a Laravel application for managing tasks, projects, and categories through a web interface and RESTful API. It leverages Eloquent ORM for database management, Laravel Resource classes for API responses, and Blade with Tailwind CSS for the frontend. Users can create, filter, and update tasks, projects, and categories seamlessly across web and API.
 
 ## Features
 
