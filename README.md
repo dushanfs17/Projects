@@ -1,4 +1,4 @@
-# Project 04: Hackathon Winning Solution for The Founder Games
+# Project 04 - Hackathon Winning Solution for The Founder Games
 
 An innovative project leveraging AI and APIs to enhance video content management and searchability, featuring:
 
