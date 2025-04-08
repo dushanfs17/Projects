@@ -1,7 +1,5 @@
 # Project 02 - Brainster Library
 
-![Brainster Library Logo](https://i.postimg.cc/zyG6QcWF/Brainster-co.png)
-
 ## Project Overview
 
 **Brainster Library** is an online platform where users can manage their library, leave public comments, and store private notes about the books they read. The platform is designed with two roles: administrators and end users, each with different functionalities.
