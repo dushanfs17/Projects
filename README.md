@@ -6,5 +6,7 @@ An innovative project leveraging AI and APIs to enhance video content management
 - **YouTube API** to fetch and manage video content.
 - **OpenAI API** for summarizing videos and generating keywords for optimized searching and indexing.
 
-Sincerely,
-Dushan Hadji-Vasilev
+#### Sincerely,
+
+#### Dushan Hadji-Vasilev
+
