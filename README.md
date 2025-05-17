@@ -34,11 +34,14 @@ This project combines functional and aesthetic elements to deliver a polished, u
 
 ### <a href="https://github.com/dushanfs17/Projects/tree/Project04-FounderGames" target="_blank">Project 04: Hackathon Winning Solution for The Founder Games</a>
 
-An innovative project leveraging AI and APIs to enhance video content management and searchability, featuring:
+An award-winning innovative project leveraging AI and APIs to enhance video content management and searchability.
+The system features a PHP backend that communicates seamlessly with a Python server responsible for processing multimedia data—this architecture played a crucial role in winning a hackathon. Python powers backend scripting and integration with key technologies, including:
 
-- **Python** for backend scripting and integration.
-- **YouTube API** to fetch and manage video content.
-- **OpenAI API** for summarizing videos and generating keywords for optimized searching and indexing.
+- **YouTube API** to fetch, organize, and manage video content in real time.
+
+- **OpenAI API** to analyze videos, generate intelligent summaries, and extract searchable keywords for enhanced indexing and retrieval.
+
+Together, these technologies form a smart video management solution that bridges AI-driven insights with robust API connectivity.
 
 ### <a href="https://github.com/dushanfs17/Projects/tree/Project-05_Brainster_Quiz_App" target="_blank">Project 05: Brainster Quiz App (JavaScript)</a>
 
